@@ -222,13 +222,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { title: 'About' });
+  res.render('projects', { title: 'About' });
 });
 app.get('/projects', (req, res) => {
   res.render('projects', { title: 'About' });
 });
-app.get('/exams', (req, res) => {
-  res.render('exams', { title: 'About' });
+app.get('/contact', (req, res) => {
+  res.render('contact', { title: 'About' });
 });
 app.get('/cat', (req, res) => {
   let db = new sqlite3.Database('./db/chinook.db', (err) => {
